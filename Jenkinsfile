@@ -14,8 +14,10 @@ pipeline {
         file(name: "FILE", description: "Choose a file to upload")
     }
     stages {
-        stage('Example') {
+        stage('checkout') {
             steps {
+                git credentialsId: '02342744-7118-42a1-84ab-a79c42bea0f5', url: 'https://github.com/PatrickMAGLOIRE/jenkinsfile.git'   
+
                 echo "Hello ${params.PERSON}"
 
                 echo "Biography: ${params.BIOGRAPHY}"
