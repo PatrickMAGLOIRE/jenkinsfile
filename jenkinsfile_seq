@@ -12,6 +12,7 @@ stages {
             echo "a partir d'ici commence mes stages non sequentiels sont termines"
         }
     }
+     stage("stage séquentiels") {
         stages {
            stage("stage sequentienl 1") {
                steps {
@@ -20,13 +21,14 @@ stages {
            }
            stage("stage séquentiel 2") {
                steps {
-                   echo "mon deuxieme stage sequetiel"
+                   echo "mon deuxieme stage sequentiel"
                }
             }
                 
            stage("stage séquentiel 3") {
                steps {
-                   echo "mon troisieme stage sequetiel"
+                   echo "mon troisieme stage sequentiel"
+                   }
                }   
            }
         }
