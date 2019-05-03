@@ -4,7 +4,7 @@ stages {
     stage("mon stage non sequentiel") {
         
         steps {
-            git branch: 'develop', credentialsId: '02342744-7118-42a1-84ab-a79c42bea0f5', url: 'https://github.com/PatrickMAGLOIRE/jenkinsfile.git'
+            git branch: 'sequentiel', credentialsId: '02342744-7118-42a1-84ab-a79c42bea0f5', url: 'https://github.com/PatrickMAGLOIRE/jenkinsfile.git'
             echo "stage non sequentiel"
         }
     }
