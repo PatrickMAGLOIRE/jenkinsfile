@@ -2,8 +2,7 @@ pipeline {
 agent none
 stages {
     stage("mon stage non sequentiel") {
-        agent {
-            label 'for-non-sequential'
+        
         }
         steps {
             git branch: 'develop', credentialsId: '02342744-7118-42a1-84ab-a79c42bea0f5', url: 'https://github.com/PatrickMAGLOIRE/jenkinsfile.git'
@@ -11,8 +10,9 @@ stages {
         }
     }
     stage("mon stage sequentiel") {
-        
+        steps {
         echo "a partir d'ici commence mes stages sequentiels"
+    }
 
         }
         stages {
