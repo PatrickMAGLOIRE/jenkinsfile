@@ -9,11 +9,7 @@ stages {
         }
     }
     stage("mon stage sequentiel") {
-        steps {
-        echo "a partir d'ici commence mes stages sequentiels"
-    }
-
-        }
+             
         stages {
            stage("stage sequentienl 1") {
                steps {
