@@ -25,10 +25,11 @@ stages {
            stage("stage séquentiel 3") {
                steps {
                    echo "mon troisieme stage sequetiel"
-               }   
-           }
+                }   
+            }
         }
     }
+ }
 }
 
 
